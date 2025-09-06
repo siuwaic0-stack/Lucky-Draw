@@ -2,7 +2,7 @@
 <html lang="zh-HK">
 <head>
   <meta charset="UTF-8">
-  <title>隨機抽號器</title>
+  <title>誰是幸運兒</title>
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -55,14 +55,14 @@
     let drawnNumbers = [];
 
     function drawNumber() {
-      if (drawnNumbers.length >= 100) {
+      if (drawnNumbers.length >= 37) {
         alert("已抽完所有號碼！");
         return;
       }
 
       let number;
       do {
-        number = Math.floor(Math.random() * 100) + 1;
+        number = Math.floor(Math.random() * 37) + 1;
       } while (drawnNumbers.includes(number));
 
       drawnNumbers.push(number);
