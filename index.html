@@ -55,14 +55,14 @@
     let drawnNumbers = [];
 
     function drawNumber() {
-      if (drawnNumbers.length >= 37) {
+      if (drawnNumbers.length >= 100) {
         alert("已抽完所有號碼！");
         return;
       }
 
       let number;
       do {
-        number = Math.floor(Math.random() * 37) + 1;
+        number = Math.floor(Math.random() * 100) + 1;
       } while (drawnNumbers.includes(number));
 
       drawnNumbers.push(number);
